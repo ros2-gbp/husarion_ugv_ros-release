@@ -1,0 +1,12 @@
+Source: ros-humble-husarion-ugv-description
+Section: misc
+Priority: optional
+Maintainer: Husarion <support@husarion.com>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-ros-workspace
+Homepage: https://husarion.com/
+Standards-Version: 3.9.2
+
+Package: ros-humble-husarion-ugv-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-husarion-components-description, ros-humble-joint-state-publisher, ros-humble-joint-state-publisher-gui, ros-humble-launch, ros-humble-launch-ros, ros-humble-nav2-common, ros-humble-robot-state-publisher, ros-humble-xacro, ros-humble-ros-workspace
+Description: The package contains URDF and mesh files for Husarion UGV
