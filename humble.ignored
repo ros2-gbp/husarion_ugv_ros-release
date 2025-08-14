@@ -1,0 +1,11 @@
+husarion_ugv
+husarion_ugv_battery
+husarion_ugv_bringup
+husarion_ugv_controller
+husarion_ugv_diagnostics
+husarion_ugv_gazebo
+husarion_ugv_hardware_interfaces
+husarion_ugv_lights
+husarion_ugv_localization
+husarion_ugv_manager
+husarion_ugv_utils
