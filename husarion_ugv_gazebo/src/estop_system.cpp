@@ -40,7 +40,7 @@ struct jointData
   double joint_velocity_cmd;
   double joint_effort_cmd;
   bool is_actuated;
-  gz::gazebo::Entity sim_joint;
+  gz::sim::Entity sim_joint;
   gz_ros2_control::GazeboSimSystemInterface::ControlMethod joint_control_method;
 };
 
@@ -57,7 +57,7 @@ class ImuData
 public:
   std::string name{};
   std::string topicName{};
-  gz::gazebo::Entity sim_imu_sensors_ = gz::gazebo::kNullEntity;
+  gz::sim::Entity sim_imu_sensors_ = gz::sim::kNullEntity;
   std::array<double, 10> imu_sensor_data_;
   void OnIMU(const gz::msgs::IMU & _msg);
 };
@@ -87,7 +87,7 @@ public:
   std::vector<std::shared_ptr<ImuData>> imus_;
   std::vector<hardware_interface::StateInterface> state_interfaces_;
   std::vector<hardware_interface::CommandInterface> command_interfaces_;
-  gz::gazebo::EntityComponentManager * ecm;
+  gz::sim::EntityComponentManager * ecm;
   int * update_rate;
   gz::transport::Node node;
   std::vector<MimicJoint> mimic_joints_;
@@ -138,15 +138,15 @@ hardware_interface::return_type EStopSystem::write(
 void EStopSystem::SetupEStop()
 {
   e_stop_publisher_ = nh_->create_publisher<BoolMsg>(
-    "~/e_stop", rclcpp::QoS(rclcpp::KeepLast(1)).transient_local().reliable());
+    "hardware/e_stop", rclcpp::QoS(rclcpp::KeepLast(1)).transient_local().reliable());
 
   e_stop_reset_service_ = nh_->create_service<TriggerSrv>(
-    "~/e_stop_reset",
+    "hardware/e_stop_reset",
     std::bind(
       &EStopSystem::EStopResetCallback, this, std::placeholders::_1, std::placeholders::_2));
 
   e_stop_trigger_service_ = nh_->create_service<TriggerSrv>(
-    "~/e_stop_trigger",
+    "hardware/e_stop_trigger",
     std::bind(
       &EStopSystem::EStopTriggerCallback, this, std::placeholders::_1, std::placeholders::_2));
 }

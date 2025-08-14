@@ -2,14 +2,50 @@
 Changelog for package husarion_ugv_lights
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.2.2 (2025-07-09)
+2.3.1 (2025-07-09)
 ------------------
-* docs hotfix
-* update lights driver config (`#543 <https://github.com/husarion/husarion_ugv_ros/issues/543>`_) (`#579 <https://github.com/husarion/husarion_ugv_ros/issues/579>`_)
-* update led docs (`#572 <https://github.com/husarion/husarion_ugv_ros/issues/572>`_) (`#573 <https://github.com/husarion/husarion_ugv_ros/issues/573>`_)
-* Update common config dir (`#562 <https://github.com/husarion/husarion_ugv_ros/issues/562>`_)
-* Lights docs update (`#532 <https://github.com/husarion/husarion_ugv_ros/issues/532>`_)
-* Contributors: Infra Man, Stefan
+* Add closing bracket
+* update led docs (`#572 <https://github.com/husarion/husarion_ugv_ros/issues/572>`_)
+* Merge branch 'ros2' of https://github.com/husarion/husarion_ugv_ros into ros2-devel
+* Merge branch 'ros2' of https://github.com/husarion/husarion_ugv_ros into ros2-devel
+* Merge branch 'ros2' of https://github.com/husarion/husarion_ugv_ros into ros2-devel
+* Update common config dir (`#540 <https://github.com/husarion/husarion_ugv_ros/issues/540>`_)
+* Better husarion_ugv_lights documentation  (`#531 <https://github.com/husarion/husarion_ugv_ros/issues/531>`_)
+* Contributors: Dawid Kmak, Stefan, action-bot, kmakd, rafal-gorecki
+
+2.3.0 (2025-05-19)
+------------------
+* Revert "Update changelog"
+* Revert "2.3.0"
+* Revert "2.3.0"
+* Revert "Update changelog"
+* Reapply "Release 2.3.0 to ros2"
+* Merge branch 'ros2' of https://github.com/husarion/husarion_ugv_ros into rel-test
+* Merge pull request `#550 <https://github.com/husarion/husarion_ugv_ros/issues/550>`_ from husarion/release-2.3.0
+* 2.3.0
+* Update changelog
+* Merge pull request `#549 <https://github.com/husarion/husarion_ugv_ros/issues/549>`_ from husarion/revert-546-release-2.3.0
+* Revert "Release 2.3.0"
+* Merge pull request `#548 <https://github.com/husarion/husarion_ugv_ros/issues/548>`_ from husarion/revert-547-2.3.0-20250425
+* Revert "Release 2.3.0 to ros2"
+* Merge pull request `#547 <https://github.com/husarion/husarion_ugv_ros/issues/547>`_ from husarion/2.3.0-20250425
+* Merge pull request `#546 <https://github.com/husarion/husarion_ugv_ros/issues/546>`_ from husarion/release-2.3.0
+* 2.3.0
+* Update changelog
+* update lights driver config (`#543 <https://github.com/husarion/husarion_ugv_ros/issues/543>`_)
+* Merge remote-tracking branch 'origin/ros2-devel' into change-pat
+* Merge pull request `#518 <https://github.com/husarion/husarion_ugv_ros/issues/518>`_ from husarion/jazzy-devel-hw
+* Merge branch 'ros2-devel' into jazzy-devel-hw
+* Migrate simulation code to run on ROS2 Jazzy (`#511 <https://github.com/husarion/husarion_ugv_ros/issues/511>`_)
+* Update minimal cmake version
+* Update workflow to jazzy
+* Merge branch 'jazzy-devel-sim' into jazzy-devel-hw
+* Merge branch 'ros2-devel' into jazzy-devel-sim
+* Fix deprecated service
+* Merge branch 'ros2-devel' into jazzy-devel-sim
+* Merge branch 'jazzy-devel-sim' into jazzy-devel-hw
+* Merge branch 'ros2-devel' into jazzy-devel-sim
+* Contributors: Dawid Kmak, Rafal Gorecki, action-bot, github-actions[bot], kmakd, rafal-gorecki, rafal.gorecki
 
 2.2.1 (2025-04-04)
 ------------------

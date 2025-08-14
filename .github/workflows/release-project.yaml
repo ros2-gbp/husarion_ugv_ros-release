@@ -23,7 +23,7 @@ on:
 
 env:
   RC_BRANCH_NAME: ${{ inputs.version }}-${{ inputs.date }}
-  MAIN_BRANCH: humble
+  MAIN_BRANCH: ros2
 
 jobs:
   variables:
@@ -51,7 +51,7 @@ jobs:
   build_docker:
     name: Build Docker
     needs: release_repository
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Build Docker Image
         uses: convictional/trigger-workflow-and-wait@v1.6.5
@@ -69,7 +69,7 @@ jobs:
 
   release_project:
     name: Release project
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Release husarion-ugv-rpi-os-img repository
         uses: convictional/trigger-workflow-and-wait@v1.6.5
@@ -105,7 +105,7 @@ jobs:
 
   docs:
     name: Docs
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Rebuild documentation
         uses: convictional/trigger-workflow-and-wait@v1.6.5

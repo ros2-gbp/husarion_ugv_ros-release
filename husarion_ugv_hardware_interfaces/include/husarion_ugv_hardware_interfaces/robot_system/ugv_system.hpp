@@ -94,6 +94,7 @@ protected:
   void ConfigureRobotDriver();
   virtual void DefineRobotDriver() = 0;
   virtual void ConfigureEStop();  // virtual for mocking
+  void ResetEStop();
 
   void UpdateMotorsState();
   void UpdateDriverState();
@@ -159,7 +160,7 @@ protected:
 
   std::shared_ptr<std::mutex> robot_driver_write_mtx_;
 
-  rclcpp::Time next_driver_state_update_time_{0, 0, RCL_ROS_TIME};
+  rclcpp::Time next_driver_state_update_time_{0, 0, RCL_STEADY_TIME};
   rclcpp::Duration driver_states_update_period_{0, 0};
 };
 

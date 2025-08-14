@@ -14,9 +14,9 @@ on:
         type: string
         default: ''
       target_distro:
-        description: ROS distribution to build docker image for (eg. humble)
+        description: ROS distribution to build docker image for (eg. jazzy)
         type: string
-        default: humble
+        default: jazzy
       target_release:
         description: In case of "stable" release specify the version of the existing docker image (eg.
           1.0.12)
@@ -43,9 +43,9 @@ on:
         default: ''
       target_distro:
         description: In case of "stable" release specify the ROS distro of the existing docker image (eg.
-          humble)
+          jazzy)
         type: string
-        default: humble
+        default: jazzy
       target_release:
         description: In case of "stable" release specify the version of the existing docker image (eg.
           1.0.12)
@@ -62,7 +62,7 @@ env:
 
 jobs:
   build-husarion-ugv:
-    runs-on: ubuntu-22.04-arm64
+    runs-on: ubuntu-24.04-arm64
 
     steps:
       - name: Checkout
@@ -76,7 +76,7 @@ jobs:
         with:
           dockerhub_username: ${{ secrets.DOCKERHUB_USERNAME }}
           dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
-          main_branch_name: humble
+          main_branch_name: ros2
           dockerfile: ./docker/Dockerfile.hardware
           repo_name: husarion-ugv
           build_type: ${{ inputs.build_type }}
@@ -88,7 +88,7 @@ jobs:
           target_date: ${{ inputs.target_date }}
 
   build-husarion-ugv-gazebo:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout
@@ -102,7 +102,7 @@ jobs:
         with:
           dockerhub_username: ${{ secrets.DOCKERHUB_USERNAME }}
           dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
-          main_branch_name: humble
+          main_branch_name: ros2
           dockerfile: ./docker/Dockerfile.simulation
           repo_name: husarion-ugv-gazebo
           build_type: ${{ inputs.build_type }}

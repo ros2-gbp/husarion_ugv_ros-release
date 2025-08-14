@@ -2,11 +2,50 @@
 Changelog for package husarion_ugv_manager
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.2.2 (2025-07-09)
+2.3.1 (2025-07-09)
 ------------------
-* Fix manager tests (`#567 <https://github.com/husarion/husarion_ugv_ros/issues/567>`_) (`#568 <https://github.com/husarion/husarion_ugv_ros/issues/568>`_)
-* lights manager fix (`#538 <https://github.com/husarion/husarion_ugv_ros/issues/538>`_)
-* Contributors: Dawid Kmak, Infra Man
+* Fix manager tests (`#567 <https://github.com/husarion/husarion_ugv_ros/issues/567>`_)
+* Merge branch 'ros2' of https://github.com/husarion/husarion_ugv_ros into ros2-devel
+* Merge branch 'ros2' of https://github.com/husarion/husarion_ugv_ros into ros2-devel
+* Merge branch 'ros2' of https://github.com/husarion/husarion_ugv_ros into ros2-devel
+* Contributors: Dawid Kmak, action-bot, kmakd
+
+2.3.0 (2025-05-19)
+------------------
+* Revert "Update changelog"
+* Revert "2.3.0"
+* Revert "2.3.0"
+* Revert "Update changelog"
+* Reapply "Release 2.3.0 to ros2"
+* Merge branch 'ros2' of https://github.com/husarion/husarion_ugv_ros into rel-test
+* Merge pull request `#550 <https://github.com/husarion/husarion_ugv_ros/issues/550>`_ from husarion/release-2.3.0
+* 2.3.0
+* Update changelog
+* Merge pull request `#549 <https://github.com/husarion/husarion_ugv_ros/issues/549>`_ from husarion/revert-546-release-2.3.0
+* Revert "Release 2.3.0"
+* Merge pull request `#548 <https://github.com/husarion/husarion_ugv_ros/issues/548>`_ from husarion/revert-547-2.3.0-20250425
+* Revert "Release 2.3.0 to ros2"
+* Merge pull request `#547 <https://github.com/husarion/husarion_ugv_ros/issues/547>`_ from husarion/2.3.0-20250425
+* Merge pull request `#546 <https://github.com/husarion/husarion_ugv_ros/issues/546>`_ from husarion/release-2.3.0
+* 2.3.0
+* Update changelog
+* fix lights manager (`#537 <https://github.com/husarion/husarion_ugv_ros/issues/537>`_)
+* Merge remote-tracking branch 'origin/ros2-devel' into change-pat
+* Merge pull request `#518 <https://github.com/husarion/husarion_ugv_ros/issues/518>`_ from husarion/jazzy-devel-hw
+* Delete debuging changes
+* Dawid suggestions
+* Merge branch 'ros2-devel' into jazzy-devel-hw
+* update minimal version in manager
+* Fix BT conditions test
+* Undo changes
+* Fix test
+* Update workflow to jazzy
+* Merge branch 'jazzy-devel-sim' into jazzy-devel-hw
+* Merge branch 'ros2-devel' into jazzy-devel-sim
+* Merge branch 'ros2-devel' into jazzy-devel-sim
+* Merge branch 'jazzy-devel-sim' into jazzy-devel-hw
+* Merge branch 'ros2-devel' into jazzy-devel-sim
+* Contributors: Dawid Kmak, Rafal Gorecki, action-bot, github-actions[bot], kmakd, rafal-gorecki, rafal.gorecki
 
 2.2.1 (2025-04-04)
 ------------------

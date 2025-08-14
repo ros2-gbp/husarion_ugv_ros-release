@@ -99,4 +99,4 @@ void EStop::OnEStopStatus(const std_msgs::msg::Bool::SharedPtr msg) { SetEStop(m
 
 }  // namespace husarion_ugv_gazebo
 
-IGNITION_ADD_PLUGIN(husarion_ugv_gazebo::EStop, ignition::gui::Plugin)
+GZ_ADD_PLUGIN(husarion_ugv_gazebo::EStop, gz::gui::Plugin)
