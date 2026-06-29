@@ -1,3 +1,42 @@
+## husarion_ugv_ros (jazzy) - 2.3.2-1
+
+The packages in the `husarion_ugv_ros` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --rosdistro jazzy husarion_ugv_ros` on `Mon, 29 Jun 2026 10:17:58 -0000`
+
+These packages were released:
+- `husarion_ugv_description`
+- `husarion_ugv_msgs`
+
+These packages were explicitly ignored:
+- `husarion_ugv`
+- `husarion_ugv_battery`
+- `husarion_ugv_bringup`
+- `husarion_ugv_controller`
+- `husarion_ugv_diagnostics`
+- `husarion_ugv_gazebo`
+- `husarion_ugv_hardware_interfaces`
+- `husarion_ugv_lights`
+- `husarion_ugv_localization`
+- `husarion_ugv_manager`
+- `husarion_ugv_teleop`
+- `husarion_ugv_utils`
+
+Version of package(s) in repository `husarion_ugv_ros`:
+
+- upstream repository: https://github.com/husarion/husarion_ugv_ros.git
+- release repository: https://github.com/ros2-gbp/husarion_ugv_ros-release.git
+- rosdistro version: `2.3.1-1`
+- old version: `2.3.1-1`
+- new version: `2.3.2-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.3`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## husarion_ugv_ros (jazzy) - 2.3.1-1
 
 The packages in the `husarion_ugv_ros` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --new-track --rosdistro jazzy --track jazzy husarion_ugv_ros` on `Thu, 14 Aug 2025 11:22:18 -0000`
