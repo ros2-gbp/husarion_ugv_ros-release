@@ -8,4 +8,5 @@ husarion_ugv_hardware_interfaces
 husarion_ugv_lights
 husarion_ugv_localization
 husarion_ugv_manager
+husarion_ugv_teleop
 husarion_ugv_utils
